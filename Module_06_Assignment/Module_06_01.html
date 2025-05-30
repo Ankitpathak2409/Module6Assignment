@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 6 Assignment</title>
+
+    <!-- This is an Internal CSS -->
+    <style>
+       #internal_css{
+        color: white;
+        background-color: gray;
+        font-size: 30px;
+       }
+
+       /* This will be overridden by inline CSS if present */
+       div p{
+          color: red;
+       }
+
+    </style>
+
+    <link rel="stylesheet" href="style_01.css">
+
+</head>
+<body>
+    <main>
+        <h2>Ques-1) Create a simple page with some div tags and show different ways to add CSS as well as what happens when you target the same elements with inline, internal, and external CSS. Also, utilize comments in the project where required?</h2>
+        <h2>Ans-1)</h2>
+        <section>
+            <div>
+                <h1>Different Ways to Add CSS</h1>
+            </div>
+
+            <div>
+                <h5 style="color: red; background-color: yellow; font-size: 30px;">This is an Inline CSS</h5> <!--Inline css -->
+            </div>
+
+            <div>
+                <h5 id="internal_css">This is an Internal CSS</h5> <!-- Internal CSS -->
+            </div>
+
+            <div>
+                <h5 id="external_css">This is an External CSS</h5> <!-- External CSS -->
+            </div>
+
+            <!-- Target the same elements with inline, internal, and external CSS -->
+
+            <div>
+                <!--Here Inline CSS takes place because it has highest specificity-->
+                <p style="color: green; font-size: 35px;">This paragraph tag target the same elements with inline, internal, and external CSS</p>
+            </div>
+
+        </section>
+    </main>
+</body>
+</html>
